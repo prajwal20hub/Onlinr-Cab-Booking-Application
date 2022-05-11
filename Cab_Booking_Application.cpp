@@ -80,7 +80,7 @@ class customer{
 }cus[4][10];
 int main() {
 		int t,amt;
-		cout<<"\t****** Welcome to Prajwal's Taxi Booking Service ******\n\n";
+		cout<<"\t****** Welcome to Prajwal's Cab Booking Service ******\n\n";
 		while(t!=3){
 			cout<<"--> Press 1 for Booking\n"
                 <<"--> Press 2 for Details\n"
