@@ -80,7 +80,7 @@ class customer{
 }cus[4][10];
 int main() {
 		int t,amt;
-		cout<<"\t****** Welcome to Prajwal's Cab Booking Service ******\n\n";
+		cout<<"\t****** Welcome to Prajwal's Taxi Booking Service ******\n\n";
 		while(t!=3){
 			cout<<"--> Press 1 for Booking\n"
                 <<"--> Press 2 for Details\n"
@@ -171,21 +171,24 @@ int main() {
                     break;
 				case 2:
 					int amt;
-					cout<<"Customer_Id  Starting_point  Ending_point  Pickup_time\n";
+					
 					for(int i=0;i<4;i++){
 						if(taxiride[i]==1){
 							amt = car[i].AmountEarned();
-							cout<<"Taxi: "<<i+1<<"\t\t"<<"Amount Earned: "<<car[i].AmountEarned()<<"\n";
+							cout<<"___________________________________________________________"<<endl;
+							cout<<"\nTaxi: "<<i+1<<"\t\t"<<"Amount Earned: "<<car[i].AmountEarned()<<"\n";
+							cout<<"Customer_Id  Starting_point  Ending_point  Pickup_time\n";
 							for(int j=0;j<numberofcustomer[i];j++){
 								cus[i][j].print();
 								cout<<"\n\n";
-							}
+							}		
 							}else{
 								break;
 							}
 						}
 						break;
-			}			
+			}	
+			cout<<"___________________________________________________________"<<endl;		
             cout<<"\nIf you want to exit(press 3 else press 1)\n";
 			cin>>t;
 		}
